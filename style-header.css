@@ -1,19 +1,5 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    height: 200%;
-}
-
 header {
     text-align: center;
-    background: #1abc9c;
     color: white;
     display: flex;
     /* justify-content: center; */
@@ -22,7 +8,12 @@ header {
     width: 100%;
 }
 
+#header {
+    background: #bc1a1a;
+}
+
 #header2 {
+    background: #1abc9c;
     position: fixed;
     width: 100%;
 }
@@ -32,7 +23,7 @@ header div {
     border: 3px solid black;
     display: flex;
     column-gap: 15px;
-    height: 100%;
+    height: 40px;
 }
 
 header .header-logo {
@@ -46,6 +37,8 @@ header .header-web-links {
 
 header .header-web-links * {
     border: 3px solid red;
+    justify-content: center;
+    align-items: center;
 }
 
 header .header-out-links {

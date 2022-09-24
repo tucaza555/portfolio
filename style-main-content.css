@@ -1,0 +1,15 @@
+:root {
+    --header_height: 50px;
+}
+
+.main-content {
+    background-color: lightblue;
+    height: calc(100vh - var(--header_height));
+    display: block;
+    padding-top: var(--header_height);
+}
+
+.main-content-two {
+    background-color: lightgreen;
+    height: 100vh;
+}

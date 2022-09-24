@@ -6,11 +6,11 @@ function scrollFunction() {
 
     if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         $(document).ready(function(){
-            $("#header2").slideDown();
+            $("#header2").slideDown("fast");
         });
     } else {
         $(document).ready(function(){
-            $("#header2").fadeOut("100");
+            $("#header2").hide();
         });
     }
 }
