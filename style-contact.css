@@ -1,0 +1,25 @@
+.main-content-contact {
+    background-color: lightsalmon;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.main-content-contact h1{
+    text-align: center;
+}
+
+.content-contact {
+    border: 3px solid red;
+    display: flex; 
+    flex-direction: column;
+    padding: 10px;
+}
+.content-contact form * {
+    border: 3px solid white;
+    background-color: lightsalmon;
+}
+.content-contact form input {
+    width: 98%;
+}

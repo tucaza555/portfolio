@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background-color: lightcoral;
+}
+
+footer div {
+    flex-grow: 1;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.footer-middle {
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+.footer-middle * {
+    border: 3px solid red;
+}
+
+.footer-right{
+    justify-content: right;
+    align-items: flex-end;
+    padding: 20px;
+}
+.footer-right * {
+    border: 3px solid red;
+}
