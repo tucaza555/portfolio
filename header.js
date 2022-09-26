@@ -1,4 +1,6 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onload = () => {$(document.getElementById("header2")).hide();}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

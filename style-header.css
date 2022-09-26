@@ -16,7 +16,8 @@ header {
     width: 100%;
 }
 
-header div {
+header div, header2 div {
+    flex: 1;
     flex-grow: 1;
     border: 3px solid black;
     display: flex;
@@ -29,21 +30,27 @@ header .header-logo {
     padding-left: 20px;
 }
 
-header .header-web-links {
-    justify-content: center;
-}
-
-header .header-web-links * {
-    border: 3px solid red;
+.header-web-links {
     justify-content: center;
     align-items: center;
 }
 
+.header-web-links * {
+    border: 3px solid red;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
 header .header-out-links {
     justify-content: flex-end;
+    align-items: center;
     padding-right: 20px;
 }
 
 header .header-out-links * {
     border: 3px solid blue;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
 }
