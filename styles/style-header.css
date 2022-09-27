@@ -1,4 +1,4 @@
-header {
+main-header, slide-header {
     text-align: center;
     color: white;
     display: flex;
@@ -16,7 +16,7 @@ header {
     width: 100%;
 }
 
-header div, header2 div {
+main-header div, slide-header div {
     flex: 1;
     flex-grow: 1;
     border: 3px solid black;
@@ -25,7 +25,7 @@ header div, header2 div {
     height: 40px;
 }
 
-header .header-logo {
+.header-logo {
     justify-content: flex-start;
     padding-left: 20px;
 }
@@ -42,13 +42,13 @@ header .header-logo {
     height: fit-content;
 }
 
-header .header-out-links {
+.header-out-links {
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
 }
 
-header .header-out-links * {
+.header-out-links * {
     border: 3px solid blue;
     justify-content: center;
     align-items: center;

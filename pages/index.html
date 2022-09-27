@@ -6,50 +6,17 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Zac Tucak">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style-universal.css" />
-        <link rel="stylesheet" href="style-header.css" />
-        <link rel="stylesheet" href="style-main-content.css" />
-        <link rel="stylesheet" href="style-footer.css" />
-        <link rel="stylesheet" href="style-contact.css" />
+        <link rel="stylesheet" href="../styles/style-universal.css" />
+        <link rel="stylesheet" href="../styles/style-header.css" />
+        <link rel="stylesheet" href="../styles/style-main-content.css" />
+        <link rel="stylesheet" href="../styles/style-footer.css" />
+        <link rel="stylesheet" href="../styles/style-contact.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="header.js"></script>
+        <script src="../scripts/header.js"></script>
     </head>
     <body>
-        <header id="header">
-            <div class="header-logo">
-                <h1 class="header-item">Header</h1>
-            </div>
-            <div class="header-web-links">
-                <a href="index.html" class="header-item">Home</a>
-                <a href="about.html" class="header-item">About</a>
-                <a href="#main-content-two" class="header-item">Projects</a>
-                <a href="#main-content-contact" class="header-item">Contact Me</a>
-            </div>
-            <div class="header-out-links">
-                <p class="header-item">Insta</p>
-                <p class="header-item">Youtube</p>
-                <p class="header-item">Github</p>
-                <p class="header-item">LinkedIN</p>
-            </div>
-        </header>
-
-        <header id="header2">
-            <div class="header-logo">
-                <h1 class="header-item">Header</h1>
-            </div>
-            <div class="header-web-links">
-                <a href="index.html" class="header-item">Home</a>
-                <a href="about.html" class="header-item">About</a>
-                <a href="#main-content-two" class="header-item">Projects</a>
-                <a href="#main-content-contact" class="header-item">Contact Me</a>
-            </div>
-            <div class="header-out-links">
-                <p class="header-item">Insta</p>
-                <p class="header-item">Youtube</p>
-                <p class="header-item">Github</p>
-                <p class="header-item">LinkedIN</p>
-            </div>
-        </header>
+        <main-header id="header"></main-header>
+        <slide-header id="header2"></slide-header>
 
         <div class="main-content">
             <div class="structure">
@@ -65,29 +32,30 @@
         </div>
 
         <div class="main-content-two" id="main-content-two">
+            <h2>Projects</h2>
             <div class="inner-content-two">
-                <div class="projects-1 project">
-                    <img></img>
+                <div class="projects-1 project" id="project-1" onclick="loadProjectOne()">
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <div class="projects-1 project">
-                    <img></img>
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <div class="projects-2 project">
-                    <img></img>
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <div class="projects-3 project">
-                    <img></img>
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <div class="projects-4 project">
-                    <img></img>
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <div class="projects-5 project">
-                    <img></img>
+                    <img src="../img/project-1.png" alt="Girl in a jacket">
                     <p>This is Project 1</p>
                 </div>
                 <a class="project-more">Click here to see more!</a>
@@ -128,6 +96,16 @@
                 <p class="header-item">LinkedIN</p>
             </div>
         </footer>
+
+        <script>
+            myFunction = () => {
+              document.getElementById("project-1").style.color = "red";
+            }
+
+            loadProjectOne = () => {
+                window.location.href = 'project_1.html';
+            }
+        </script>
 
     </body>
 </html>
